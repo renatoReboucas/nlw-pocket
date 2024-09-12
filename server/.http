@@ -4,6 +4,9 @@
 ### GET testing route
 GET {{apiurl}}/ping HTTP/1.1
 
+### GET get peding goals
+GET {{apiurl}}/peding-goals HTTP/1.1
+
 ### POST goals
 POST {{apiurl}}/goals HTTP/1.1
 Content-Type: application/json
@@ -11,4 +14,12 @@ Content-Type: application/json
 {
    "title":"studying english",
    "desiredWeeklyFrequency": 2
+}
+
+### POST goals-completions
+POST {{apiurl}}/completions HTTP/1.1
+Content-Type: application/json
+
+{
+  "goalId": "mzsdg30mrjgti65fn074jfj0"
 }
